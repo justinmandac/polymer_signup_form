@@ -9,6 +9,16 @@ class SignupForm extends  Polymer.Element {
       },
     };
   }
+
+  /** @private */
+  _onPresubmit(evt) {
+    evt.preventDefault();
+
+    const form = Polymer.dom(this.root).querySelector('#form');
+    const formData = form.request.body;
+
+    console.log(formData);
+  }
 }
 
 customElements.define(SignupForm.is, SignupForm);

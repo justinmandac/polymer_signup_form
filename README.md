@@ -15,3 +15,7 @@ for detailed instructions.
 2. In your terminal, navigate to the repository's directory and run `bower install`.
 3. Run `polymer serve`. The output will tell you the URL where you can access the application. This
 will usually be `http://127.0.0.1:8081`.
+
+## TODO
+* Add validators
+* Aadd custom form elements

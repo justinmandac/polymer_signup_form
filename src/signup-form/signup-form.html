@@ -1,5 +1,7 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 <link rel="import" href="../../bower_components/iron-form/iron-form.html">
+<link rel="import" href="../../bower_components/iron-input/iron-input.html">
+
 <dom-module id="signup-form">
   <template>
     <style>
@@ -13,9 +15,13 @@
           <fieldset>
             <legend>Account Information</legend>
             <label for="username">Username:</label>
-            <input type="text" name="user_name" id="username">
+            <iron-input>
+              <input type="text" name="user_name" id="username" required>  
+            </iron-input> 
             <label for="password">Password</label>
-            <input type="password" name="password" id="passwords">
+            <iron-input>
+              <input type="password" name="password" id="password">
+            </iron-input>
             <label for="confirmPassword">Confirm Password</label>
             <input type="password" id="confirmPassword">
           </fieldset>

@@ -16,6 +16,7 @@
     "polymer": "Polymer/polymer#^2.2.0",
     "reset-css": "^2.2.1",
     "iron-form": "PolymerElements/iron-form#^2.0.1",
-    "iron-input": "PolymerElements/iron-input#^2.0.1"
+    "iron-input": "PolymerElements/iron-input#^2.0.1",
+    "iron-validatable-behavior": "PolymerElements/iron-validatable-behavior#^2.0.0"
   }
 }

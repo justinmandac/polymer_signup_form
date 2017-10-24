@@ -1,14 +1,9 @@
-class MainApp extends Polymer.Element {
-  static get is() { return 'main-app'; }
-
-  static get properties() {
-    return {
-      formData: {
-        type: Object,
-        value: () => ({}),
-      },
-    };
+(() => {
+  const SignupFormMixin = window.SignupForm.Mixins.SignupFormMixin;
+  
+  class MainApp extends SignupFormMixin(Polymer.Element) {
+    static get is() { return 'main-app'; }
   }
-}
-
-customElements.define(MainApp.is, MainApp);
+  
+  customElements.define(MainApp.is, MainApp);
+})()

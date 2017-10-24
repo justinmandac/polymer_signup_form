@@ -10,8 +10,9 @@
   
       const form = Polymer.dom(this.root).querySelector('#form');
       const formData = form.request.body;
-  
-      console.log(this.formData);
+      // formData - apparently - will contain elements in the form with a 
+      // [name] attribute.
+      console.log(formData);
     }
   }
   

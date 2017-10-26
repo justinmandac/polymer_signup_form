@@ -1,6 +1,4 @@
-(() => {
-  const SignupFormMixin = window.SignupForm.Mixins.SignupFormMixin;
-  
+((SignupFormMixin = (superclass) => superclass) => {
   class SignupForm extends SignupFormMixin(Polymer.Element) {
     static get is() { return 'signup-form'; }
   
@@ -17,4 +15,4 @@
   }
   
   customElements.define(SignupForm.is, SignupForm);
-})();
+})(window.SignupForm.Mixins.SignupFormMixin);

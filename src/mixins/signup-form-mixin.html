@@ -1,0 +1,17 @@
+<script>
+  (function(root) {
+    root.SignupForm = root.SignupForm || {};
+    root.SignupForm.Mixins = root.SignupForm.Mixins || {};
+    root.SignupForm.Mixins.SignupFormMixin =
+      (superclass) => class extends superclass {
+        static get properties() {
+          return {
+            formData: {
+              type: Object,
+              value: () => ({}),
+            },
+          };
+        }
+      };
+  })(window);
+</script>

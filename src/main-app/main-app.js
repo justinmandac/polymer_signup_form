@@ -1,4 +1,4 @@
-((SignupFormMixin) => {  
+((SignupFormMixin = window.SignupForm.Mixins.DefaultMixin) => {  
   class MainApp extends SignupFormMixin(Polymer.Element) {
     static get is() { return 'main-app'; }
   }

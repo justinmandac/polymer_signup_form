@@ -1,4 +1,4 @@
-((SignupFormMixin = (superclass) => superclass) => {
+((SignupFormMixin = window.SignupForm.Mixins.DefaultMixin) => {
   class SignupForm extends SignupFormMixin(Polymer.Element) {
     static get is() { return 'signup-form'; }
   

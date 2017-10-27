@@ -18,6 +18,7 @@
     "iron-form": "PolymerElements/iron-form#^2.0.1",
     "iron-input": "PolymerElements/iron-input#^2.0.1",
     "iron-validatable-behavior": "PolymerElements/iron-validatable-behavior#^2.0.0",
-    "iron-validator-behavior": "PolymerElements/iron-validator-behavior#^2.0.0"
+    "iron-validator-behavior": "PolymerElements/iron-validator-behavior#^2.0.0",
+    "paper-styles": "PolymerElements/paper-styles#^2.0.0"
   }
 }

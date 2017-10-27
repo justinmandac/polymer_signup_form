@@ -26,13 +26,14 @@
 
     validate(value) {
       // super.validate calls IronValidatableBehavior.Validate      
-      if (value === undefined || value.trim() == '') {
-        // Exit early if value is blank.
+      if (this.value === undefined || this.value.trim() == '') {
+        // Exit early if value is blank. Password is required.
         this.invalid = true;
         return !this.invalid;
       }
 
-      this.invalid = !(value === this._passwordPair);
+      // Passwords do not match.
+      this.invalid = !(this.value === this._passwordPair);
       return !this.invalid;
     }
   }
